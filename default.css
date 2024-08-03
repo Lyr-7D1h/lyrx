@@ -1,0 +1,304 @@
+* {
+  font-family: monospace;
+  text-align: center;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 25px 0 15px 0;
+  text-align: left;
+}
+h1 a {
+  text-decoration: none;
+  color: darkblue;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  padding: 25px 0 25px 0;
+  text-align: left;
+  font-size: 20px;
+}
+blockquote {
+  color: #656d76;
+  border-left: 0.25em solid #d0d7de;
+}
+blockquote p {
+  margin: 10px;
+}
+code {
+  /* Dont wrap spaces */
+  white-space: pre-wrap;
+}
+
+#default_sitetree,
+#default_sitetree_entry,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  margin: 0 35vw;
+}
+@media only screen and (max-width: 1100px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote {
+    margin: 0 25vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 10px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* watermark */
+#content {
+  margin: 0;
+  position: relative;
+  /* Firefox */
+  min-height: -moz-calc(100% - 30px);
+  /* WebKit */
+  min-height: -webkit-calc(100% - 30px);
+  /* Opera */
+  min-height: -o-calc(100% - 30px);
+  /* Standard */
+  min-height: calc(100vh - 30px);
+}
+#watermark {
+  text-align: center;
+  height: 30px;
+  margin: 0;
+  clear: both;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+/* <centered> */
+.centered {
+  text-align: center;
+}
+.centered > h1,
+.centered > h2,
+.centered > h3,
+.centered > h4,
+.centered > h5,
+.centered > h6,
+.centered > p {
+  text-align: center;
+}
+
+/* links */
+nav.links {
+  width: 100%;
+  float: left;
+}
+nav.links i {
+  font-size: 2em;
+  margin-right: 20px;
+}
+nav.links a {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+  text-decoration: none;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 225px;
+  height: 225px;
+  font-size: 1.3em;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  word-wrap: break-word;
+}
+.box:hover {
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumbs {
+  padding: 20px;
+  text-align: left;
+}
+
+.default__links_grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.default__links_grid a {
+  text-decoration: none;
+  color: black;
+  flex-basis: calc(33.3% - 20px);
+  margin: 10px;
+}
+.default__links_grid_card {
+  padding: 1rem;
+}
+.default__links_grid_card:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: linear 700ms;
+  border-radius: 10px;
+}
+.default__links_grid_card_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+.default__links_grid_card_cover {
+  padding: 20px;
+}
+.default__links_grid_card_cover:hover img,
+.default__links_grid_card_cover:hover svg {
+  transform: scale(1.05);
+  transition: transform 150ms;
+}
+.default__links_grid_card_cover * {
+  object-fit: contain;
+}
+@media only screen and (max-width: 1100px) {
+  .default__links_grid a {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .default__links_grid a {
+    flex-basis: 100%;
+  }
+  .default__links_grid {
+    max-width: 100%;
+  }
+}
+
+.default__carausel {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.default__carausel_main {
+  width: calc(80% - 30px);
+  padding: 15px;
+}
+.default__carausel_other {
+  width: calc(20% - 30px);
+  padding: 15px;
+}
+.default__carausel_item * {
+  width: 100%;
+}
+.default__carausel_item {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .default__carausel_other,
+  .default__carausel_main {
+    width: 100%;
+  }
+}
+
+/** https://www.w3schools.com/howto/howto_css_modal_images.asp */
+#default__modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#default__modal_image {
+  display: block;
+  width: auto;
+  margin: 5vh auto auto auto;
+  max-height: 90vh;
+}
+#default__modal_caption {
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  width: 30vw;
+  max-width: 700px;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  height: 150px;
+}
+#default__modal_close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #3b3b3b;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#default__modal_close:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  #default__modal_content {
+    width: 100%;
+  }
+}
+
+#default__sitetree {
+  text-align: left;
+}
+.default__sitetree_entry {
+  text-align: left;
+}

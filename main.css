@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 20;
+  font-display: block;
+  src: url("./lib/UbuntuMono-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: "Ubuntu Mono";
+}
+
+html {
+  height: 100%;
+  display: block;
+}
+body {
+  background: rgb(246, 195, 208, 0.4);
+  background: linear-gradient(
+    145deg,
+    rgba(169, 203, 236, 0.3) 0%,
+    rgba(246, 195, 208, 0.3) 60%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
