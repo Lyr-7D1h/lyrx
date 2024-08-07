@@ -1,6 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="widthdevice-width, initial-scale1.0"/><title>Living Space</title><script crossorigin src="../assets/controller-0ymnDdca.js" type="module"></script><link rel="modulepreload" crossorigin href="../assets/creature-DsdPZHyU.js">
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="widthdevice-width, initial-scale1.0"/><title>Living Space</title><script crossorigin src="../assets/controller-cYfe05nS.js" type="module"></script><link rel="modulepreload" crossorigin href="../assets/creature-BHTxridD.js">
     <link rel="stylesheet" crossorigin href="../assets/controller-DOJeptjO.css">
-  </head><body><div id="messages"></div><div style="display: none" id="modal"><span class="fas fa-times" id="modal-close-button"></span><div id="modal-content">
+  </head><body><div id="messages"></div><div style="display: none" id="modal"><span id="modal-close-button" class="fas fa-times"></span><div id="modal-content">
         <h1>Living Space</h1><p>
           Welcome to Living Space! This is a simulation of a small ecosystem
           where creatures interact with each other and their environment. Each
@@ -28,40 +28,40 @@
           specification.
         </p></div></div>
 
-    <div id="creature_creator"><span class="fas fa-info-circle" id="info-button"></span><form id="creature_creator_form">
+    <div id="creature_creator"><span id="info-button" class="fas fa-info-circle"></span><form id="creature_creator_form">
         <div class="column left">
           <div id="position-content" style="width: 100%">
             <label for="position">Position</label><canvas id="position"></canvas></div></div>
         <div class="column right"><div style="width: 100%">
-            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input type
+            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input max
+="100" type
+="range" value="50" name
+="openness" min
+="0"/></div><div class="text">Curious</div></div>
+            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input type
 ="range" name
-="openness" max
+="conscientiousness" max
+="100" value="50" min
+="0"/></div><div class="text">Caring</div></div>
+            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input type
+="range" max
 ="100" min
-="0" value="50"/></div><div class="text">Curious</div></div>
-            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input name
-="conscientiousness" value="50" min
-="0" max
-="100" type
-="range"/></div><div class="text">Caring</div></div>
-            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input max
-="100" type
+="0" value="50" name
+="extraversion"/></div><div class="text">Extraverted</div></div>
+            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input value="50" max
+="100" name
+="agreeableness" type
 ="range" min
-="0" name
-="extraversion" value="50"/></div><div class="text">Extraverted</div></div>
-            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input name
-="agreeableness" min
-="0" max
-="100" type
-="range" value="50"/></div><div class="text">Agreeable</div></div>
-            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input type
-="range" min
-="0" value="50" max
+="0"/></div><div class="text">Agreeable</div></div>
+            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input min
+="0" type
+="range" value="50" max
 ="100" name
 ="neuroticism"/></div><div class="text">Confident</div></div>
-            <input id
-="create-button" value
-="Create Creature" disabled type
-="submit"/><button disabled type="button" id="details-button">Details</button><pre style="display: none" id="details"></pre></div>
+            <input disabled id
+="create-button" type
+="submit" value
+="Create Creature"/><button disabled id="details-button" type="button">Details</button><pre id="details" style="display: none"></pre></div>
         </div>
       </form>
     </div>

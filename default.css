@@ -45,9 +45,6 @@ code {
   /* Dont wrap spaces */
   white-space: pre-wrap;
 }
-
-#default_sitetree,
-#default_sitetree_entry,
 h1,
 h2,
 h3,
@@ -294,11 +291,4 @@ nav.links a {
   #default__modal_content {
     width: 100%;
   }
-}
-
-#default__sitetree {
-  text-align: left;
-}
-.default__sitetree_entry {
-  text-align: left;
 }
