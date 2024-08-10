@@ -1,6 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta content="widthdevice-width, initial-scale1.0" name="viewport"/><title>Living Space</title><script type="module" src="../assets/controller-ByZEEKR-.js" crossorigin></script><link rel="modulepreload" crossorigin href="../assets/creature-BZHPYSn1.js">
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta content="widthdevice-width, initial-scale1.0" name="viewport"/><title>Living Space</title><script crossorigin src="../assets/controller-ByZEEKR-.js" type="module"></script><link rel="modulepreload" crossorigin href="../assets/creature-BZHPYSn1.js">
     <link rel="stylesheet" crossorigin href="../assets/controller-DOJeptjO.css">
-  </head><body><div id="messages"></div><div id="modal" style="display: none"><span id="modal-close-button" class="fas fa-times"></span><div id="modal-content">
+  </head><body><div id="messages"></div><div id="modal" style="display: none"><span class="fas fa-times" id="modal-close-button"></span><div id="modal-content">
         <h1>Living Space</h1><p>
           Welcome to Living Space! This is a simulation of a small ecosystem
           where creatures interact with each other and their environment. Each
@@ -33,35 +33,35 @@
           <div id="position-content" style="width: 100%">
             <label for="position">Position</label><canvas id="position"></canvas></div></div>
         <div class="column right"><div style="width: 100%">
-            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input value="50" type
-="range" min
+            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input type
+="range" name
+="openness" min
 ="0" max
-="100" name
-="openness"/></div><div class="text">Curious</div></div>
-            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input name
-="conscientiousness" value="50" type
-="range" max
-="100" min
-="0"/></div><div class="text">Caring</div></div>
-            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input type
-="range" max
+="100" value="50"/></div><div class="text">Curious</div></div>
+            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input max
 ="100" value="50" min
 ="0" name
+="conscientiousness" type
+="range"/></div><div class="text">Caring</div></div>
+            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input max
+="100" type
+="range" min
+="0" value="50" name
 ="extraversion"/></div><div class="text">Extraverted</div></div>
-            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input max
-="100" value="50" min
+            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input min
 ="0" name
 ="agreeableness" type
-="range"/></div><div class="text">Agreeable</div></div>
-            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input max
-="100" min
-="0" value="50" name
-="neuroticism" type
+="range" max
+="100" value="50"/></div><div class="text">Agreeable</div></div>
+            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input min
+="0" max
+="100" name
+="neuroticism" value="50" type
 ="range"/></div><div class="text">Confident</div></div>
-            <input disabled type
-="submit" value
+            <input value
 ="Create Creature" id
-="create-button"/><button type="button" disabled id="details-button">Details</button><pre id="details" style="display: none"></pre></div>
+="create-button" type
+="submit" disabled/><button type="button" disabled id="details-button">Details</button><pre style="display: none" id="details"></pre></div>
         </div>
       </form>
     </div>
