@@ -1,21 +1,21 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta content="widthdevice-width, initial-scale1.0" name="viewport"/><title>Living Space</title><meta content="Lyr, lyr-7d1h@pm.me" name="author"/><meta name="subject" content="art"/><meta content="https://lyrx.dev/art/living_space/red.jpg" property
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta content="widthdevice-width, initial-scale1.0" name="viewport"/><title>Living Space</title><meta name="author" content="Lyr, lyr-7d1h@pm.me"/><meta name="subject" content="art"/><meta content="https://lyrx.dev/art/living_space/red.jpg" property
 ="og:image"/><meta name="twitter:image" content
-="https://lyrx.dev/art/living_space/red.jpg"/><meta content="Welcome to Living Space! This is a simulation of a small ecosystem
+="https://lyrx.dev/art/living_space/red.jpg"/><meta name
+="description" property
+="og:description" content="Welcome to Living Space! This is a simulation of a small ecosystem
 where creatures interact with each other and their environment. Each
 creature has a unique personality based on the Big Five personality trait
 that influences how they walk and interact with other creatures. For
 example a very caring creature gets very attracted to other creatures
 or a more introverted creature will avoid other creatures and stay
-more in place." name
-="description" property
-="og:description"/><meta name
+more in place."/><meta name
 ="twitter:description" content="Welcome to Living Space! This is a simulation of a small ecosystem
 where creatures interact with each other and their environment. Each
 creature has a unique personality based on the Big Five personality trait
 that influences how they walk and interact with other creatures. For
 example a very caring creature gets very attracted to other creatures
 or a more introverted creature will avoid other creatures and stay
-more in place."/><meta content="art,simulation,technology" name="keywords"/><script crossorigin src="../assets/controller-CM1gRyak.js" type="module"></script><link rel="modulepreload" crossorigin href="../assets/creature-BZHPYSn1.js">
+more in place."/><meta content="art,simulation,technology" name="keywords"/><script type="module" crossorigin src="../assets/controller-CM1gRyak.js"></script><link rel="modulepreload" crossorigin href="../assets/creature-BZHPYSn1.js">
     <link rel="stylesheet" crossorigin href="../assets/controller-DHwWw2Vs.css">
   </head><body><div id="messages"></div><div style="display: none" id="modal"><span id="modal-close-button" class="fas fa-times"></span><div id="modal-content">
         <h1>Living Space</h1><p>
@@ -45,40 +45,40 @@ more in place."/><meta content="art,simulation,technology" name="keywords"/><scr
           specification.
         </p></div></div>
 
-    <div id="creature_creator"><span id="info-button" class="fas fa-info-circle"></span><form id="creature_creator_form">
+    <div id="creature_creator"><span class="fas fa-info-circle" id="info-button"></span><form id="creature_creator_form">
         <div class="column left">
           <div id="position-content" style="width: 100%">
             <label for="position">Position</label><canvas id="position"></canvas></div></div>
         <div class="column right"><div style="width: 100%">
-            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input max
-="100" value="50" name
+            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input name
 ="openness" type
 ="range" min
-="0"/></div><div class="text">Curious</div></div>
-            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input value="50" type
-="range" max
-="100" min
-="0" name
-="conscientiousness"/></div><div class="text">Caring</div></div>
-            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input name
-="extraversion" type
-="range" min
+="0" max
+="100" value="50"/></div><div class="text">Curious</div></div>
+            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input max
+="100" type
+="range" value="50" name
+="conscientiousness" min
+="0"/></div><div class="text">Caring</div></div>
+            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input type
+="range" name
+="extraversion" min
 ="0" value="50" max
 ="100"/></div><div class="text">Extraverted</div></div>
-            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input name
-="agreeableness" min
-="0" max
-="100" value="50" type
-="range"/></div><div class="text">Agreeable</div></div>
-            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input min
-="0" value="50" type
+            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input max
+="100" min
+="0" type
 ="range" name
-="neuroticism" max
-="100"/></div><div class="text">Confident</div></div>
-            <input disabled value
-="Create Creature" type
-="submit" id
-="create-button"/><button disabled type="button" id="details-button">Details</button><pre id="details" style="display: none"></pre></div>
+="agreeableness" value="50"/></div><div class="text">Agreeable</div></div>
+            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input max
+="100" value="50" type
+="range" min
+="0" name
+="neuroticism"/></div><div class="text">Confident</div></div>
+            <input id
+="create-button" type
+="submit" value
+="Create Creature" disabled/><button disabled id="details-button" type="button">Details</button><pre id="details" style="display: none"></pre></div>
         </div>
       </form>
     </div>
