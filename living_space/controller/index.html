@@ -1,23 +1,18 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="widthdevice-width, initial-scale1.0"/><title>Living Space</title><meta name="author" content="Lyr, lyr-7d1h@pm.me"/><meta name="subject" content="art"/><meta property
-="og:image" content="https://lyrx.dev/art/living_space/red.jpg"/><meta name="twitter:image" content
-="https://lyrx.dev/art/living_space/red.jpg"/><meta name
-="description" property
-="og:description" content="Welcome to Living Space! This is a simulation of a small ecosystem
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="widthdevice-width, initial-scale1.0"/><title>Living Space</title><meta content="Lyr, lyr-7d1h@pm.me" name="author"/><meta content="art" name="subject"/><meta content="https://lyrx.dev/art/living_space/red.jpg" property="og:image"/><meta content="https://lyrx.dev/art/living_space/red.jpg" name="twitter:image"/><meta name="description" property="og:description" content="Welcome to Living Space! This is a simulation of a small ecosystem
 where creatures interact with each other and their environment. Each
 creature has a unique personality based on the Big Five personality trait
 that influences how they walk and interact with other creatures. For
 example a very caring creature gets very attracted to other creatures
 or a more introverted creature will avoid other creatures and stay
-more in place."/><meta name
-="twitter:description" content="Welcome to Living Space! This is a simulation of a small ecosystem
+more in place."/><meta name="twitter:description" content="Welcome to Living Space! This is a simulation of a small ecosystem
 where creatures interact with each other and their environment. Each
 creature has a unique personality based on the Big Five personality trait
 that influences how they walk and interact with other creatures. For
 example a very caring creature gets very attracted to other creatures
 or a more introverted creature will avoid other creatures and stay
-more in place."/><meta content="art,simulation,technology" name="keywords"/><script crossorigin src="../assets/controller-CM1gRyak.js" type="module"></script><link rel="modulepreload" crossorigin href="../assets/creature-BZHPYSn1.js">
+more in place."/><meta content="art,simulation,technology" name="keywords"/><script type="module" crossorigin src="../assets/controller-CM1gRyak.js"></script><link rel="modulepreload" crossorigin href="../assets/creature-BZHPYSn1.js">
     <link rel="stylesheet" crossorigin href="../assets/controller-DHwWw2Vs.css">
-  </head><body><div id="messages"></div><div style="display: none" id="modal"><span class="fas fa-times" id="modal-close-button"></span><div id="modal-content">
+  </head><body><div id="messages"></div><div style="display: none" id="modal"><span id="modal-close-button" class="fas fa-times"></span><div id="modal-content">
         <h1>Living Space</h1><p>
           Welcome to Living Space! This is a simulation of a small ecosystem
           where creatures interact with each other and their environment. Each
@@ -50,35 +45,12 @@ more in place."/><meta content="art,simulation,technology" name="keywords"/><scr
           <div id="position-content" style="width: 100%">
             <label for="position">Position</label><canvas id="position"></canvas></div></div>
         <div class="column right"><div style="width: 100%">
-            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input name
-="openness" min
-="0" type
-="range" max
-="100" value="50"/></div><div class="text">Curious</div></div>
-            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input min
-="0" type
-="range" name
-="conscientiousness" max
-="100" value="50"/></div><div class="text">Caring</div></div>
-            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input type
-="range" value="50" name
-="extraversion" min
-="0" max
-="100"/></div><div class="text">Extraverted</div></div>
-            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input value="50" type
-="range" name
-="agreeableness" min
-="0" max
-="100"/></div><div class="text">Agreeable</div></div>
-            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input type
-="range" min
-="0" name
-="neuroticism" max
-="100" value="50"/></div><div class="text">Confident</div></div>
-            <input disabled id
-="create-button" type
-="submit" value
-="Create Creature"/><button type="button" disabled id="details-button">Details</button><pre id="details" style="display: none"></pre></div>
+            <div id="color" style="margin: auto"></div><label for="openness">Openness</label><div class="slider"><div class="text">Cautious</div><div class="slider-input"><input min="0" type="range" name="openness" value="50" max="100"/></div><div class="text">Curious</div></div>
+            <label for="conscientiousness">Conscientiousness</label><div class="slider"><div class="text">Careless</div><div class="slider-input"><input type="range" name="conscientiousness" min="0" max="100" value="50"/></div><div class="text">Caring</div></div>
+            <label for="extraversion">Extraversion</label><div class="slider"><div class="text">Introverted</div><div class="slider-input"><input value="50" max="100" type="range" name="extraversion" min="0"/></div><div class="text">Extraverted</div></div>
+            <label for="agreeableness">Agreeableness</label><div class="slider"><div class="text">Judgmental</div><div class="slider-input"><input name="agreeableness" value="50" min="0" max="100" type="range"/></div><div class="text">Agreeable</div></div>
+            <label for="neuroticism">Neuroticism</label><div class="slider"><div class="text">Sensitive</div><div class="slider-input"><input name="neuroticism" value="50" min="0" max="100" type="range"/></div><div class="text">Confident</div></div>
+            <input disabled id="create-button" type="submit" value="Create Creature"/><button id="details-button" type="button" disabled>Details</button><pre id="details" style="display: none"></pre></div>
         </div>
       </form>
     </div>
