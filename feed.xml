@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>LyrX</title>
+    <link>https://lyrx.dev/</link>
+    <description>Lyr&apos;s little space of the internet</description>
+    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Living Space</title>
+      <link>https://lyrx.dev/art/living_space</link>
+      <guid>https://lyrx.dev/art/living_space</guid>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Squiggles</title>
+      <link>https://lyrx.dev/art/squiggles</link>
+      <guid>https://lyrx.dev/art/squiggles</guid>
+      <pubDate>Tue, 9 Apr 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Creative Coding Amsterdam Banner</title>
+      <link>https://lyrx.dev/art/cca</link>
+      <guid>https://lyrx.dev/art/cca</guid>
+      <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hello World: Random Graph Circles</title>
+      <link>https://lyrx.dev/art/hello_world</link>
+      <guid>https://lyrx.dev/art/hello_world</guid>
+      <pubDate>Tue, 5 Mar 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to self study mathematics</title>
+      <link>https://lyrx.dev/blog/how_to_self_study_mathematics</link>
+      <guid>https://lyrx.dev/blog/how_to_self_study_mathematics</guid>
+      <pubDate>Wed, 3 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Coffee might not be the magic drink I thought it was..</title>
+      <link>https://lyrx.dev/blog/coffee_might_not_be_the_magic_drink</link>
+      <guid>https://lyrx.dev/blog/coffee_might_not_be_the_magic_drink</guid>
+      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
