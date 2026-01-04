@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><title>Custom HTML Elements | LSSG</title><meta content="Custom HTML Elements | LSSG" property="og:title"/><meta content="Custom HTML Elements | LSSG" name="twitter:title"/><link rel="stylesheet" href="../../../prism.css"/><link rel="stylesheet" href="../../../default.css"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta charset="utf-8"/><script defer data-website-id="a3641f2d-876d-4971-97d3-2cb6c57a762b" src="https://analytics.lyrx.dev/script.js"></script><meta property="og:image" content="https://lyrx.dev/icon.png"/><meta content="https://lyrx.dev/icon.png" name="twitter:image"/><meta name="keywords" content="blog,ssg,static-site-generation,technology,projects,software"/><meta content="Lyr, lyr-7d1h@pm.me" name="author"/><meta name="description" content="Lyr's Static Site Generator documentation"/><meta property="og:description" content="Lyr's Static Site Generator documentation"/><meta name="twitter:description" content="Lyr's Static Site Generator documentation"/><meta name="subject" content="technology"/></head><body><main id="default__content"><nav class="default__side-menu"><ul><li><a href="../../lssg" class="default__side-menu__link">lssg</a><ul><li><a class="default__side-menu__link" href="../install">Install</a></li><li><a href="../usage" class="default__side-menu__link">Usage</a></li><li><a href="../configuration" class="default__side-menu__link">Configuration</a></li><li><a href="../custom_elements" class="default__side-menu__link default__side-menu__link--active">Custom Elements</a></li><li><a class="default__side-menu__link" href="../lmarkdown">Lyr&#39;s Markdown</a></li><li><a href="../architecture" class="default__side-menu__link">Architecture</a></li><li><a href="../roadmap" class="default__side-menu__link">Roadmap</a></li><li><a class="default__side-menu__link" href="../tutorials">Tutorials</a><ul><li><a href="../tutorials/how_to_host_static_files" class="default__side-menu__link">How to host static files</a></li></ul></li></ul></li></ul></nav><h1>Custom HTML Elements</h1><p>LSSG provides custom HTML elements that you can use directly in your markdown files to create rich layouts and components.</p><h2 id="<centered>"><a aria-hidden=true href="#<centered>" class="default__section-link"><svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z"/></svg></a><code>&lt;centered&gt;</code></h2><p>Center content horizontally.</p><p><b>Markdown:</b></p><pre><code class="language-markdown copy-to-clipboard-button" data-copy-state="copy">&lt;centered&gt;
+This content will be centered.
+&lt;/centered&gt;
+</code></pre><p><b>Generated HTML:</b></p><pre><code class="language-html copy-to-clipboard-button" data-copy-state="copy">&lt;div class=&quot;default__centered&quot;&gt;
+  &lt;p&gt;This content will be centered.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre><h2 id="<links>"><a class="default__section-link" aria-hidden=true href="#<links>"><svg viewBox="0 0 640 640" height="20" xmlns="http://www.w3.org/2000/svg" width="20"><path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z"/></svg></a><code>&lt;links&gt;</code></h2><p>Create styled link collections in different layouts.</p><h3>Links Boxes</h3><p>Display links as styled boxes in a navigation layout.</p><p><b>Markdown:</b></p><pre><code class="language-markdown copy-to-clipboard-button" data-copy-state="copy">&lt;links boxes&gt;
+[Project 1](./project1.md &quot;First project&quot;)
+[Project 2](./project2.md)
+[Project 3](./project3.md &quot;Third project&quot;)
+&lt;/links&gt;
+</code></pre><p><b>Generated HTML:</b></p><pre><code data-copy-state="copy" class="language-html copy-to-clipboard-button">&lt;nav class=&quot;default__links&quot;&gt;
+  &lt;a href=&quot;/project1.html&quot; title=&quot;First project&quot;&gt;
+    &lt;div class=&quot;default__links_box&quot;&gt;Project 1&lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;/project2.html&quot;&gt;
+    &lt;div class=&quot;default__links_box&quot;&gt;Project 2&lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;/project3.html&quot; title=&quot;Third project&quot;&gt;
+    &lt;div class=&quot;default__links_box&quot;&gt;Project 3&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/nav&gt;
+</code></pre><h3>Links Grid</h3><p>Display links as a grid of cards with optional cover images.</p><p><b>Markdown:</b></p><pre><code class="language-markdown copy-to-clipboard-button" data-copy-state="copy">&lt;links grid&gt;
+[![Cover](cover1.jpg) Project 1](./project1.md)
+[![Cover](cover2.jpg) Project 2](./project2.md)
+[Project 3](./project3.md)
+&lt;/links&gt;
+</code></pre><p><b>Generated HTML:</b></p><pre><code data-copy-state="copy" class="language-html copy-to-clipboard-button">&lt;div class=&quot;default__links_grid&quot;&gt;
+  &lt;a href=&quot;/project1.html&quot;&gt;
+    &lt;div class=&quot;default__links_grid_card&quot;&gt;
+      &lt;div class=&quot;default__links_grid_card_cover&quot;&gt;
+        &lt;img src=&quot;cover1.jpg&quot; alt=&quot;Cover&quot;&gt;
+      &lt;/div&gt;
+      &lt;h2 class=&quot;default__links_grid_card_title&quot;&gt;Project 1&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;/project2.html&quot;&gt;
+    &lt;div class=&quot;default__links_grid_card&quot;&gt;
+      &lt;div class=&quot;default__links_grid_card_cover&quot;&gt;
+        &lt;img src=&quot;cover2.jpg&quot; alt=&quot;Cover&quot;&gt;
+      &lt;/div&gt;
+      &lt;h2 class=&quot;default__links_grid_card_title&quot;&gt;Project 2&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;/project3.html&quot;&gt;
+    &lt;div class=&quot;default__links_grid_card&quot;&gt;
+      &lt;h2 class=&quot;default__links_grid_card_title&quot;&gt;Project 3&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</code></pre><p><b>Notes:</b></p><ul><li>If link content starts with an image, it becomes the cover</li><li>Cover images are automatically scaled (width: 100%, height: auto)</li><li>SVG covers get viewBox attributes for proper scaling</li></ul><h2 id="<carousel>"><a href="#<carousel>" aria-hidden=true class="default__section-link"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z"/></svg></a><code>&lt;carousel&gt;</code></h2><p>Create an image carousel with a main display and thumbnails.</p><p><b>Markdown:</b></p><pre><code data-copy-state="copy" class="language-markdown copy-to-clipboard-button">&lt;carousel&gt;
+![Image 1](image1.jpg)
+![Image 2](image2.jpg)
+![Image 3](image3.jpg)
+![Image 4](image4.jpg)
+&lt;/carousel&gt;
+</code></pre><p><b>Generated HTML:</b></p><pre><code data-copy-state="copy" class="language-html copy-to-clipboard-button">&lt;div class=&quot;default__carausel&quot;&gt;
+  &lt;div class=&quot;default__carausel_main&quot;&gt;
+    &lt;div class=&quot;default__carausel_item&quot; onclick=&quot;default__toggleModal(event)&quot;&gt;
+      &lt;img src=&quot;image1.jpg&quot; alt=&quot;Image 1&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;default__carausel_other&quot;&gt;
+    &lt;div class=&quot;default__carausel_item&quot; onclick=&quot;default__toggleModal(event)&quot;&gt;
+      &lt;img src=&quot;image2.jpg&quot; alt=&quot;Image 2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;default__carausel_item&quot; onclick=&quot;default__toggleModal(event)&quot;&gt;
+      &lt;img src=&quot;image3.jpg&quot; alt=&quot;Image 3&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;default__carausel_item&quot; onclick=&quot;default__toggleModal(event)&quot;&gt;
+      &lt;img src=&quot;image4.jpg&quot; alt=&quot;Image 4&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><b>Notes:</b></p><ul><li>First image appears in main display</li><li>Remaining images appear as thumbnails</li><li>Items are clickable with modal functionality</li></ul><h2 id="<sitetree>"><a href="#<sitetree>" aria-hidden=true class="default__section-link"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z"/></svg></a><code>&lt;sitetree&gt;</code></h2><p>Generate a hierarchical site navigation tree.</p><p><b>Markdown:</b></p><pre><code data-copy-state="copy" class="language-markdown copy-to-clipboard-button">&lt;sitetree&gt;
+</code></pre><p>With ignore list:</p><pre><code data-copy-state="copy" class="language-markdown copy-to-clipboard-button">&lt;sitetree ignore=&quot;404,blog&quot;&gt;
+</code></pre><p><b>Generated HTML:</b></p><pre><code class="language-html copy-to-clipboard-button" data-copy-state="copy">&lt;div class=&quot;default__sitetree&quot;&gt;
+  &lt;div class=&quot;default__sitetree_folder&quot;&gt;
+    &lt;a href=&quot;/docs/&quot;&gt;docs/&lt;/a&gt;
+    &lt;div class=&quot;default__sitetree_folder_content&quot;&gt;
+      &lt;div class=&quot;default__sitetree_file&quot;&gt;
+        &lt;a href=&quot;/docs/install.html&quot;&gt;install&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;default__sitetree_file&quot;&gt;
+        &lt;a href=&quot;/docs/usage.html&quot;&gt;usage&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;default__sitetree_file&quot;&gt;
+    &lt;a href=&quot;/about.html&quot;&gt;about&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><b>Attributes:</b> <b>Notes:</b></p><ul><li>Folders are sorted before files</li><li>Within each group, items are sorted alphabetically</li><li>Folders display with trailing <code>/</code></li></ul><h2 id="custom-attributes"><a href="#custom-attributes" class="default__section-link" aria-hidden=true><svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="20"><path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z"/></svg></a>Custom Attributes</h2><p>All custom elements support standard HTML attributes:</p><pre><code class="language-markdown copy-to-clipboard-button" data-copy-state="copy">&lt;centered id=&quot;hero&quot; class=&quot;my-class&quot; style=&quot;color: red;&quot;&gt;
+Content here
+&lt;/centered&gt;
+</code></pre><p>Any unrecognized HTML tag will be rendered as-is with its attributes:</p><pre><code class="language-markdown copy-to-clipboard-button" data-copy-state="copy">&lt;myCustomTag data-value=&quot;123&quot;&gt;
+Custom content
+&lt;/myCustomTag&gt;
+</code></pre></main><footer id="default__footer">Generated by <a href="https://github.com/lyr-7D1h/lssg">LSSG</a></footer><script src="../../../prism.js"></script><script src="../../../default.js"></script></body></html>
