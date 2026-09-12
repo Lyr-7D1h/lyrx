@@ -21,6 +21,12 @@
     <loc>https://lyrx.dev/art/living_space/</loc>
   </url>
   <url>
+    <loc>https://lyrx.dev/art/living_space/living_space/</loc>
+  </url>
+  <url>
+    <loc>https://lyrx.dev/art/living_space/living_space/controller/</loc>
+  </url>
+  <url>
     <loc>https://lyrx.dev/art/lubna/</loc>
   </url>
   <url>
@@ -37,12 +43,6 @@
   </url>
   <url>
     <loc>https://lyrx.dev/blog/how_to_self_study_mathematics/</loc>
-  </url>
-  <url>
-    <loc>https://lyrx.dev/living_space/</loc>
-  </url>
-  <url>
-    <loc>https://lyrx.dev/living_space/controller/</loc>
   </url>
   <url>
     <loc>https://lyrx.dev/models/</loc>
